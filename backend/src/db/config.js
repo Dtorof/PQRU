@@ -3,7 +3,7 @@ const mongoose = require ('mongoose');
 const dbConection = async()=>{
 
     try{
-        await mongoose.connect(process.env.MONGODB_CNN);
+        await mongoose.connect('mongodb+srv://admin:admin@yedi.6jm9ksf.mongodb.net/yediDB');
         console.log('Base de datos online')
     }
     catch(error){
